@@ -11875,6 +11875,12 @@ public final class Settings {
         @Readable
         public static final String QSTILE_REQUIRES_UNLOCKING = "qstile_requires_unlocking";
 
+	/**
+         * Quicksettings tile shape
+         * @hide
+         */
+        public static final String QS_TILE_SHAPE = "qs_tile_shape";
+
         /**
          * Whether to disable qs on secure lockscreen.
          * Default 0
