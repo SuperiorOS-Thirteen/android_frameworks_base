@@ -5996,7 +5996,13 @@ public final class Settings {
          */
         public static final String LOCKSCREEN_WEATHER_STYLE = "lockscreen_weather_style";
 
-       /**
+        /**
+         * Enable and Disable Dual Tone Colors QsPanel
+         * @hide
+         */
+        public static final String QS_DUAL_TONE = "qs_dual_tone";
+
+        /**
          * These are all public system settings
          *
          * @hide
