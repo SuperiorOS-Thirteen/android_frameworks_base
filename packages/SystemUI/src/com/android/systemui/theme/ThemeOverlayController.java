@@ -541,6 +541,18 @@ public class ThemeOverlayController implements CoreStartable, Dumpable, TunerSer
                 },
                 UserHandle.USER_ALL);
 
+        mSecureSettings.registerContentObserverForUser(
+                Settings.Secure.getUriFor(Settings.Secure.ENABLE_COMBINED_SIGNAL_ICONS),
+                false,
+                new ContentObserver(mBgHandler) {
+                    @Override
+                    public void onChange(boolean selfChange, Collection<Uri> collection, int flags,
+                            int userId) {
+                        restartSystemUI();
+                    }
+                },
+                UserHandle.USER_ALL);
+
         mUserTracker.addCallback(mUserTrackerCallback, mMainExecutor);
 
         mDeviceProvisionedController.addCallback(mDeviceProvisionedListener);
@@ -656,7 +668,7 @@ public class ThemeOverlayController implements CoreStartable, Dumpable, TunerSer
          }
     }
 
-    private void reevaluateSystemTheme(boolean forceReload) {
+    protected void reevaluateSystemTheme(boolean forceReload) {
         final WallpaperColors currentColors = mCurrentColors.get(mUserTracker.getUserId());
         final int mainColor;
         if (currentColors == null) {
