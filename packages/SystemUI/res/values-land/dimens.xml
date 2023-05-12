@@ -70,4 +70,11 @@
     <!-- Bouncer user switcher margins -->
     <dimen name="bouncer_user_switcher_view_mode_user_switcher_bottom_margin">0dp</dimen>
     <dimen name="bouncer_user_switcher_view_mode_view_flipper_bottom_margin">0dp</dimen>
+
+    <!--  In landscape we need adjust it for dual notification shade
+          in regular screen look more better  -->
+    <dimen name="qs_panel_padding_top">12dp</dimen>
+    <dimen name="qs_panel_padding_top_combined_headers">12dp</dimen>
+    
+    <dimen name="qs_header_system_icons_area_height">12dp</dimen>
 </resources>
