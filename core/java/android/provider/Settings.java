@@ -11882,6 +11882,12 @@ public final class Settings {
         public static final String QS_TILE_SHAPE = "qs_tile_shape";
 
         /**
+         * Quicksettings UI Style
+         * @hide
+         */
+        public static final String QS_STYLE_ROUND = "qs_style_round";
+
+        /**
          * Whether to disable qs on secure lockscreen.
          * Default 0
          * @hide
