@@ -138,4 +138,8 @@
 
     <!-- For dynamic default font styles -->
     <java-symbol type="string" name="config_bodyFontFamily" />
+
+    <!-- Keybox -->
+    <java-symbol type="array" name="config_certifiedKeybox" />
+
 </resources>
