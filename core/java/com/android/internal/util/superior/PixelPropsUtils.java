@@ -290,13 +290,13 @@ public class PixelPropsUtils {
                 if (processName.equals("com.google.android.gms.unstable")) {
                     sIsGms = true;
                     // Alter build parameters to avoid hardware attestation enforcement
-                    setPropValue("BRAND", "YU nitrogen");
-                    setPropValue("MANUFACTURER", "YU");
-                    setPropValue("DEVICE", "YUREKA");
-                    setPropValue("FINGERPRINT", "YU/YUREKA/YUREKA:5.1.1/LMY49J/YOG4PAS8A4:user/release-keys");
-                    setPropValue("MODEL", "YU5510");
-                    setPropValue("PRODUCT", "YUREKA");
-                    setPropValue("SECURITY_PATCH", "2015-11-01");
+                    setPropValue("BRAND", "google");
+                    setPropValue("MANUFACTURER", "Google");
+                    setPropValue("DEVICE", "oriole");
+                    setPropValue("FINGERPRINT", "google/oriole_beta/oriole:15/BP11.241121.013/12873528:user/release-keys");
+                    setPropValue("MODEL", "Pixel 6");
+                    setPropValue("PRODUCT", "oriole_beta");
+                    setPropValue("SECURITY_PATCH", "2024-12-05");
                 }
                 return;
             }
