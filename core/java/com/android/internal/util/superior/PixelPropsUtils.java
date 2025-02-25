@@ -293,10 +293,10 @@ public class PixelPropsUtils {
                     setPropValue("BRAND", "google");
                     setPropValue("MANUFACTURER", "Google");
                     setPropValue("DEVICE", "oriole");
-                    setPropValue("FINGERPRINT", "google/oriole_beta/oriole:15/BP11.241121.013/12873528:user/release-keys");
+                    setPropValue("FINGERPRINT", "google/oriole_beta/oriole:Baklava/BP22.250124.009/13034193:user/release-keys");
                     setPropValue("MODEL", "Pixel 6");
                     setPropValue("PRODUCT", "oriole_beta");
-                    setPropValue("SECURITY_PATCH", "2024-12-05");
+                    setPropValue("SECURITY_PATCH", "2025-02-05");
                 }
                 return;
             }
