@@ -2556,7 +2556,6 @@ public final class SystemServer implements Dumpable {
                 mSystemServiceManager.startService(PocketBridgeService.class);
                 t.traceEnd();
             }
-
         }
 
         t.traceBegin("StartMediaProjectionManager");
