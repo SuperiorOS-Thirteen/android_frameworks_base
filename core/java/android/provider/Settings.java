@@ -5901,12 +5901,6 @@ public final class Settings {
         /** @hide */
         public static final String BACK_GESTURE_HAPTIC = "back_gesture_haptic";
 
-        /**
-         * QS Header
-         * @hide
-         */
-        public static final String QS_HEADER_IMAGE = "qs_header_image";
-
 	/**
          * Arcane Idle Manager
          * @hide
