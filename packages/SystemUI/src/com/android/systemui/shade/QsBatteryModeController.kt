@@ -41,13 +41,9 @@ constructor(
      * animation.
      */
     @BatteryMeterView.BatteryPercentMode
-    fun getBatteryMode(cutout: DisplayCutout?, qsExpandedFraction: Float): Int? =
-        when {
-            qsExpandedFraction > fadeInStartFraction -> BatteryMeterView.MODE_ESTIMATE
-            qsExpandedFraction < fadeOutCompleteFraction ->
-                BatteryMeterView.MODE_ESTIMATE
-            else -> null
-        }
+    fun getBatteryMode(cutout: DisplayCutout?, qsExpandedFraction: Float): Int? {
+        return BatteryMeterView.MODE_DEFAULT
+    }
 
     fun updateResources() {
         fadeInStartFraction =
